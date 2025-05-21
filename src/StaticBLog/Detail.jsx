@@ -4,28 +4,6 @@ import './BlogStyles.css';
 
 const Detail = () => {
   const { id } = useParams();
-  
-  // In a real app, you would fetch this data based on the ID
-//   const blogData = {
-//     1: {
-//       title: "The Future of Interior Design in 2023",
-//       content: [
-//         "The interior design landscape is evolving rapidly, with 2023 bringing fresh perspectives on how we inhabit and experience our spaces. This year, we're seeing a strong emphasis on biophilic design elements that connect occupants more closely to nature. Large windows, indoor plants, and natural materials are becoming standard rather than exceptional features.",
-//         "Another significant trend is the rise of 'multi-functional minimalism' - spaces that appear clean and uncluttered while actually containing clever, hidden storage solutions and convertible furniture. This approach answers the growing need for homes to serve as offices, gyms, and relaxation spaces all in one.",
-//         "Color palettes are shifting toward earthy neutrals with occasional bold accents. Think warm taupes, soft clays, and deep forest greens paired with vibrant terracotta or electric blue highlights. This creates spaces that feel both grounded and dynamic.",
-//         "Technology integration has become more subtle yet more sophisticated. From voice-controlled lighting to hidden charging stations, tech is being designed to disappear when not in use while remaining instantly accessible when needed.",
-//         "Perhaps most importantly, 2023 marks a turning point in sustainable design. Clients are increasingly requesting materials with low environmental impact, and designers are responding with innovative solutions like recycled glass countertops, rapidly renewable bamboo flooring, and non-toxic paints."
-//       ],
-//       date: "May 15, 2023",
-//       readTime: "5 min read",
-//       category: "Design Trends",
-//       image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-//       author: "Sarah Johnson",
-//       authorTitle: "Lead Designer",
-//       authorImage: "https://randomuser.me/api/portraits/women/44.jpg"
-//     },
-//     // Add similar objects for other blog IDs (2-6)
-//   };
 
 
 
