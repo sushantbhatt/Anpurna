@@ -1,0 +1,552 @@
+/* Aluminium Glass Component Styles */
+.aluminium-component {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2A2A2A;
+}
+
+/* Hero Section */
+.aluminium-hero-section {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.aluminium-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aluminium-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aluminium-hero-content {
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.aluminium-hero-content h1 {
+  color: #FFFFFF;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.aluminium-hero-content p {
+  color: #F1F1F1;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* Container */
+.aluminium-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Section Titles */
+.aluminium-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2A2A2A;
+  font-weight: 600;
+}
+
+.aluminium-section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7A7A7A;
+  margin-bottom: 3rem;
+}
+
+/* Product Grid */
+.aluminium-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+/* Product Card */
+.aluminium-product-card {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.aluminium-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.aluminium-product-image-container {
+  height: 250px;
+  overflow: hidden;
+}
+
+.aluminium-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.aluminium-product-card:hover .aluminium-product-image {
+  transform: scale(1.05);
+}
+
+.aluminium-product-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.aluminium-product-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #2A2A2A;
+  font-weight: 600;
+}
+
+.aluminium-product-price {
+  font-size: 1.1rem;
+  color: #E90000;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.aluminium-product-description-container {
+  height: 80px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.aluminium-product-description {
+  font-size: 0.95rem;
+  color: #7A7A7A;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.aluminium-product-details-container {
+  flex: 1;
+  min-height: 200px;
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 1.5rem;
+  border: 1px solid #F1F1F1;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.aluminium-product-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aluminium-product-details li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  display: flex;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #FAFAFA;
+}
+
+.aluminium-product-details li:last-child {
+  border-bottom: none;
+}
+
+.aluminium-detail-label {
+  font-weight: 600;
+  color: #2A2A2A;
+  min-width: 134px;
+}
+
+.aluminium-detail-value {
+  color: #7A7A7A;
+  flex: 1;
+}
+
+.aluminium-product-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.aluminium-quote-button {
+  background-color: #6EC1E4;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.aluminium-quote-button:hover {
+  background-color: #5aa8c9;
+}
+
+.aluminium-brochure-button {
+  background-color: #61CE70;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.aluminium-brochure-button:hover {
+  background-color: #4fb35d;
+}
+
+.aluminium-button-icon {
+  font-size: 1rem;
+}
+
+/* Modal Styles */
+.aluminium-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.aluminium-modal-content {
+  background-color: white;
+  border-radius: 8px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.aluminium-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #7A7A7A;
+  z-index: 10;
+}
+
+.aluminium-modal-close:hover {
+  color: #2A2A2A;
+}
+
+.aluminium-modal-left {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.aluminium-modal-right {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem;
+  background-color: #FAFAFA;
+}
+
+.aluminium-modal-image-container {
+  height: 300px;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.aluminium-modal-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aluminium-modal-product-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2A2A2A;
+  font-weight: 600;
+}
+
+.aluminium-modal-price {
+  font-size: 1.2rem;
+  color: #E90000;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.aluminium-modal-description-container {
+  margin-bottom: 1.5rem;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.aluminium-modal-description {
+  font-size: 0.95rem;
+  color: #7A7A7A;
+  line-height: 1.6;
+}
+
+.aluminium-modal-specs-container {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #F1F1F1;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.aluminium-modal-specs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aluminium-modal-specs li {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  display: flex;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #FAFAFA;
+}
+
+.aluminium-modal-specs li:last-child {
+  border-bottom: none;
+}
+
+.aluminium-modal-spec-label {
+  font-weight: 600;
+  color: #2A2A2A;
+  min-width: 150px;
+}
+
+.aluminium-modal-spec-value {
+  color: #7A7A7A;
+  flex: 1;
+}
+
+.aluminium-contact-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aluminium-contact-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2A2A2A;
+  font-weight: 600;
+}
+
+.aluminium-contact-message {
+  font-size: 0.95rem;
+  color: #7A7A7A;
+  margin-bottom: 1.5rem;
+}
+
+.aluminium-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.aluminium-form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2A2A2A;
+}
+
+.aluminium-form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #F1F1F1;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease;
+}
+
+.aluminium-form-input:focus {
+  outline: none;
+  border-color: #6EC1E4;
+}
+
+.aluminium-submit-button {
+  background-color: #6EC1E4;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: auto;
+}
+
+.aluminium-submit-button:hover {
+  background-color: #5aa8c9;
+}
+
+.aluminium-submit-button:disabled {
+  background-color: #7A7A7A;
+  cursor: not-allowed;
+}
+
+.aluminium-modal-brochure-button {
+  background-color: #61CE70;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.aluminium-modal-brochure-button:hover {
+  background-color: #4fb35d;
+}
+
+/* Scrollbar Styling */
+.aluminium-product-description-container::-webkit-scrollbar,
+.aluminium-product-details-container::-webkit-scrollbar,
+.aluminium-modal-description-container::-webkit-scrollbar,
+.aluminium-modal-specs-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.aluminium-product-description-container::-webkit-scrollbar-track,
+.aluminium-product-details-container::-webkit-scrollbar-track,
+.aluminium-modal-description-container::-webkit-scrollbar-track,
+.aluminium-modal-specs-container::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+
+.aluminium-product-description-container::-webkit-scrollbar-thumb,
+.aluminium-product-details-container::-webkit-scrollbar-thumb,
+.aluminium-modal-description-container::-webkit-scrollbar-thumb,
+.aluminium-modal-specs-container::-webkit-scrollbar-thumb {
+  background: #6EC1E4;
+  border-radius: 3px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .aluminium-modal-content {
+    flex-direction: column;
+    max-height: 100vh;
+    margin-top: 100px;
+  }
+  
+  .aluminium-modal-left,
+  .aluminium-modal-right {
+    flex:1;
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .aluminium-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .aluminium-hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .aluminium-section-title {
+    font-size: 2rem;
+  }
+  
+  .aluminium-section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .aluminium-product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .aluminium-product-details-container {
+    min-height: 150px;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aluminium-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .aluminium-hero-content p {
+    font-size: 1rem;
+  }
+  
+  .aluminium-product-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .aluminium-quote-button,
+  .aluminium-brochure-button {
+    width: 100%;
+  }
+  
+  .aluminium-modal-left,
+  .aluminium-modal-right {
+    padding: 1.5rem;
+  }
+  
+  .aluminium-modal-image-container {
+    height: 200px;
+  }
+}

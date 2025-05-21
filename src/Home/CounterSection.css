@@ -1,0 +1,216 @@
+/* Counter Section Styles */
+.counter-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 2rem 0;
+  margin-bottom: -10rem;
+}
+
+/* Carousel Background */
+.counter-carousel-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.counter-carousel-container .carousel,
+.counter-carousel-container .carousel-inner,
+.counter-carousel-container .carousel-item {
+  height: 100%;
+}
+
+.counter-carousel-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Counter Content */
+.counter-content-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem 0;
+}
+
+.counter-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.section-subtitle {
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+/* Counters Grid */
+.counters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+/* Counter Card */
+.counter-card {
+  background: rgba(15, 42, 29, 0.4);
+  backdrop-filter: blur(0.5rem);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 0.0625rem solid rgba(174, 195, 176, 0.2);
+}
+
+.counter-value {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.counter-value span {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.counter-label {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.counter-divider {
+  width: 3.75rem;
+  height: 0.1875rem;
+  margin: 0 auto;
+  background: #61CE70;
+  transition: all 0.3s ease;
+}
+
+.counter-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.counter-card:hover .counter-divider {
+  width: 6.25rem;
+  background-color: #E3EED4;
+}
+
+.counter-card:hover .counter-value,
+.counter-card:hover .counter-label {
+  color: #E3EED4;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .counter-section {
+    min-height: auto;
+    padding: 5rem 0;
+  }
+  
+  .counters-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .counter-content-container {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .counter-section {
+    padding: 4rem 0;
+    margin-bottom: -8rem;
+  }
+  
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .counter-card {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .counter-section {
+    padding: 3rem 0;
+    margin-bottom: -6rem;
+  }
+  
+  .counters-grid {
+   
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .counter-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .counter-section {
+    padding: 2rem 0;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .counter-value {
+    font-size: 2rem;
+  }
+  
+  .counter-value span {
+    font-size: 1.5rem;
+  }
+  
+  .counter-label {
+    font-size: 1rem;
+  }
+}

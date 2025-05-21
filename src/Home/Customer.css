@@ -1,0 +1,18 @@
+/* In styles.css or global.css */
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+
+
+  #customer-section{
+    height: 500px !important;
+  }
+
+
+  

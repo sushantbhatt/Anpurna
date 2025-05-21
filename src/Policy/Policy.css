@@ -1,0 +1,49 @@
+.terms-and-conditions-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    margin-top: 58px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    line-height: 1.7;
+  }
+  
+  .terms-and-conditions-card {
+    width: 100%;
+  }
+  
+  .terms-and-conditions-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+    border-bottom: 2px solid #f1c40f;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .terms-and-conditions-text p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  .terms-and-conditions-text ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .terms-and-conditions-text li {
+    margin-bottom: 10px;
+  }
+  
+  .terms-and-conditions-text h3 {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    color: #34495e;
+    border-left: 4px solid #f1c40f;
+    padding-left: 10px;
+  }
+  

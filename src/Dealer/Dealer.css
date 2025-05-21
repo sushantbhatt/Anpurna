@@ -1,0 +1,223 @@
+/* Dealer.css */
+.dealer_header_spacer {
+    height: 100px;
+  }
+  @media (min-width: 200px) and (max-width: 1200px) {
+    .dealer_header_spacer {
+      height: 0;
+    }
+  }
+  
+  .dealer_hero_section {
+    height: 60vh;
+    max-height: 400px;
+    position: relative;
+  }
+  @media (min-width: 200px) and (max-width: 1200px) {
+    .dealer_hero_section {
+      margin-top: 1rem;
+      max-height: 150px !important;
+    }
+  }
+  @media (min-width: 200px) and (max-width: 450px) {
+    .dealer_hero_section {
+      margin-top: 2rem;
+      max-height: 200px;
+    }
+  }
+  
+  .dealer_hero_banner {
+    max-height: 550px;
+    max-width: 1400px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  @media (min-width: 200px) and (max-width: 1200px) {
+    .dealer_hero_banner {
+      height: 100%;
+    }
+  }
+  
+  .dealer_hero_banner_overlay {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .dealer_hero_content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+    justify-content: center;
+    padding: 0 3rem;
+    width: 100%;
+  }
+  @media (min-width: 200px) and (max-width: 450px) {
+    .dealer_hero_content {
+      justify-content: start;
+      padding: 0 2rem;
+    }
+  }
+  
+  .dealer_main_container {
+    margin: auto;
+    max-width: 1400px;
+    width: 85%;
+  }
+  
+  .dealer_content_container {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+   
+  }
+  @media (min-width: 200px) and (max-width: 1200px) {
+    .dealer_content_container {
+      flex-direction: column;
+    }
+  }
+  
+  .dealer_benefits_container, 
+  .dealer_form_container {
+    flex: 1 1;
+  }
+  
+  .dealer_form_wrapper {
+    background-color: #353839;
+    border-radius: 1.2rem;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+  
+  .dealer_form_fields, 
+  .dealer_form_wrapper {
+    display: flex;
+    flex-direction: column;
+    height: -webkit-max-content;
+    height: max-content;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  
+  .dealer_form_wrapper p {
+    color: rgb(255, 255, 255) !important;
+    font-size: 1.3rem;
+  }
+  
+  .dealer_field_container {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+  }
+  @media (min-width: 200px) and (max-width: 1200px) {
+    .dealer_field_container {
+      align-items: self-start;
+      flex-direction: column;
+    }
+  }
+  
+  .dealer_field_label {
+    flex: 1 1;
+  }
+  
+  .dealer_field_label p {
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .dealer_field_input {
+    border-bottom: 1px solid #e9e9e9;
+    flex: 2 1;
+    padding-bottom: .98rem;
+  }
+  @media (min-width: 200px) and (max-width: 1200px) {
+    .dealer_field_input {
+      width: 100%;
+    }
+  }
+  
+  .dealer_submit_btn {
+    background-color: #000;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    margin: auto;
+    max-width: 350px;
+    padding: 0.6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  @media (min-width: 200px) and (max-width: 1200px) {
+    .dealer_submit_btn {
+      max-width: 300px;
+    }
+  }
+  
+  .dealer_input_field,
+  .dealer_input_field select {
+    background-color: initial;
+    border: none;
+    color: #fff;
+    font-size: 0.865rem;
+    font-weight: 300;
+    outline: none;
+    width: 100%;
+  }
+  
+  .dealer_requirements_container {
+    margin: 2rem auto auto;
+    max-width: 1400px;
+    width: 85%;
+  }
+  
+  .dealer_input_field::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
+  
+  /* General styles that won't interfere with other components */
+  .dealer_main_container h3,
+  .dealer_requirements_container h3 {
+    font-size: 24px !important;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    line-height: 2.5rem;
+    margin-bottom: 0;
+    font-size: calc(1.3rem + .6vw);
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+  }
+  
+  .dealer_main_container h4,
+  .dealer_requirements_container h4 {
+    color: rgb(250, 133, 61);
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  .dealer_main_container span,
+  .dealer_requirements_container span {
+    color: rgb(250, 133, 61);
+  }
+  
+  .dealer_main_container p,
+  .dealer_requirements_container p
+ {
+    font-size: 0.865rem;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+ 
+
+  
